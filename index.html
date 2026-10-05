@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Лабораторна робота №3</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h1>Лабораторна робота №3</h1>
+
+    <button id="addButton">Додати</button>
+
+    <form id="addForm" style="display: none; margin-top: 20px;">
+        <input type="text" id="name" placeholder="Ім'я" required>
+        <input type="text" id="group" placeholder="Група" required>
+        <input type="number" id="age" placeholder="Вік" required>
+
+        <button type="submit">Зберегти</button>
+    </form>
+
+    <table border="1" style="margin-top: 20px; border-collapse: collapse;">
+        <thead>
+            <tr>
+                <th>Ім'я</th>
+                <th>Група</th>
+                <th>Вік</th>
+                <th>Дії</th>
+            </tr>
+        </thead>
+
+        <tbody id="tableBody">
+            <tr>
+                <td class="editable">Олена</td>
+                <td>М-41</td>
+                <td>20</td>
+                <td><button class="deleteButton">✖</button></td>
+            </tr>
+        </tbody>
+    </table>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
