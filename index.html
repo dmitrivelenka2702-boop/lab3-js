@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Лабораторна робота №3</title>
-<link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
@@ -12,15 +12,14 @@
 
     <button id="addButton">Додати</button>
 
-    <form id="addForm" style="display: none; margin-top: 20px;">
+    <form id="addForm" class="hidden">
         <input type="text" id="name" placeholder="Ім'я" required>
         <input type="text" id="group" placeholder="Група" required>
-        <input type="number" id="age" placeholder="Вік" required>
-
+        <input type="number" id="age" placeholder="Вік" min="1" required>
         <button type="submit">Зберегти</button>
     </form>
 
-    <table border="1" style="margin-top: 20px; border-collapse: collapse;">
+    <table>
         <thead>
             <tr>
                 <th>Ім'я</th>
@@ -29,18 +28,9 @@
                 <th>Дії</th>
             </tr>
         </thead>
-
-        <tbody id="tableBody">
-            <tr>
-                <td class="editable">Олена</td>
-                <td>М-41</td>
-                <td>20</td>
-                <td><button class="deleteButton">✖</button></td>
-            </tr>
-        </tbody>
+        <tbody id="tableBody"></tbody>
     </table>
 
     <script src="script.js"></script>
-
 </body>
 </html>
